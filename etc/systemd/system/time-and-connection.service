@@ -1,0 +1,13 @@
+[Unit]
+Description=Show Time and WiFi on E-Ink Display
+After=network.target
+
+[Service]
+Type=simple
+User=tbrinkhuis
+WorkingDirectory=/usr/local/bin
+ExecStart=/bin/bash -c 'python3 show-time-wifi.py'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
