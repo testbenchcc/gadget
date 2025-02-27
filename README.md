@@ -1,6 +1,10 @@
-# Gadget - RP Zero 2 sandbox
+# Gadget – Raspberry Pi Zero 2 W Sandbox
 
-Sandbox for the RP Zero 2 W, gadget modes, e-Paper screens, microphones, and more.
+This repository serves as a sandbox environment for experimenting with the Raspberry Pi Zero 2 W, focusing on gadget modes, e-paper displays, microphones, and more.
+
+## Setup
+
+The files in this repository are organized to mirror the system's directory structure. To set up, copy each file to its corresponding folder on your Raspberry Pi. This alignment ensures compatibility with the provided scripts and notes. 
 
 ## Installing Python Packages
 
