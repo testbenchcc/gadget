@@ -1,4 +1,8 @@
-### Installing Python Packages
+# Gadget - RP Zero 2 sandbox
+
+Sandbox for the RP Zero 2 W, gadget modes, e-Paper screens, microphones, and more.
+
+## Installing Python Packages
 
 Due to restrictions in the Raspberry Pi OS, it's advisable to avoid using `pip` for system-wide installations. Instead, install Python packages using the package manager with:
 
@@ -10,7 +14,7 @@ sudo apt install python3-[package-name]
 
 Replace `[package-name]` with the specific name of the package you wish to install. This method ensures compatibility and proper integration with the system.
 
-### Adding a Cron Job
+## Adding a Cron Job
 
 To ensure the system maintains a Wi-Fi connection, you can add a script to run every minute using cron. Edit the root user's crontab with:
 
@@ -30,18 +34,15 @@ Add the following line to schedule the script to run every minute:
 
 Ensure you use `sudo` to edit the root crontab, so the job is added for the root user.
 
-### Adding a Service
+## Adding a Service
 
 To run scripts automatically at system startup, add them as services. This approach is useful for tasks like keeping the display updated. First, create a service file, for example:
-
 
 ```bash
 sudo nano /etc/systemd/system/show-time-wifi.service
 ```
 
-
 Add the following content to the service file:
-
 
 ```ini
 [Unit]
@@ -59,15 +60,12 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-
 Then, reload the systemd manager configuration and enable the service to start on boot:
-
 
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable show-time-wifi.service
 sudo systemctl start show-time-wifi.service
 ```
-
 
 This setup ensures your script runs at startup and restarts automatically if it fails. 
