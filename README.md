@@ -4,7 +4,7 @@ This repository serves as a sandbox environment for experimenting with the Raspb
 
 ## Setup
 
-The files in this repository are organized to mirror the system's directory structure. To set up, copy each file to its corresponding folder on your Raspberry Pi. This alignment ensures compatibility with the provided scripts and notes. 
+The files in this repository are organized to mirror the system's directory structure. To set up, copy each file to its corresponding folder on your Raspberry Pi. Hopefully, this helps align with the provided scripts and notes. 
 
 ## Installing Python Packages
 
