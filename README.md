@@ -8,7 +8,7 @@ sudo apt install python3-[package-name]
 ```
 
 
-Replace `[package-name]` with the specific name of the package you wish to install. This method ensures compatibility and proper integration with the system. citeturn0search3
+Replace `[package-name]` with the specific name of the package you wish to install. This method ensures compatibility and proper integration with the system.
 
 ### Adding a Cron Job
 
