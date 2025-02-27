@@ -46,7 +46,7 @@ To run scripts automatically at system startup, add them as services. This appro
 sudo nano /etc/systemd/system/show-time-wifi.service
 ```
 
-Add the following content to the service file:
+Add the following content to the service file. Update the `<user>` to your username:
 
 ```ini
 [Unit]
@@ -55,7 +55,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=user
+User=<user>
 WorkingDirectory=/usr/local/bin
 ExecStart=/bin/bash -c 'python3 show-time-wifi.py'
 Restart=on-failure
