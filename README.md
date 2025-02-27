@@ -24,7 +24,7 @@ Add the following line to schedule the script to run every minute:
 
 
 ```bash
-* * * * * /path/to/your/script.sh
+* * * * * /usr/local/bin/wifi-up.sh
 ```
 
 
