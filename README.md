@@ -60,7 +60,7 @@ WantedBy=multi-user.target
 ```
 
 
-Replace `/path/to/your/script.sh` with the actual path to your script. Then, reload the systemd manager configuration and enable the service to start on boot:
+Then, reload the systemd manager configuration and enable the service to start on boot:
 
 
 ```bash
