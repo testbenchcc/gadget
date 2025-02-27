@@ -1,1 +1,4 @@
+# access using `sudo crontab -e` 
+# use the root user
+
 * * * * * root /usr/local/bin/wifi-up.sh
