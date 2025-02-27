@@ -15,6 +15,6 @@ I am using this to keep the screen updated.
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable myscript.service
-sudo systemctl start myscript.service
+sudo systemctl enable show-time-wifi.service
+sudo systemctl start show-time-wifi.service
 ```
